@@ -1,5 +1,5 @@
 import Image from "next/image"
-import searchIcon from "@/public/assets/search_icon.svg"
+import searchIcon from "@/public/icons/search_icon.svg"
 
 function Searchbar() {
 	return (

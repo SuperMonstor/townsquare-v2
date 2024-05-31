@@ -1,5 +1,7 @@
 import Searchbar from "@/components/shared/Searchbar"
 import Image from "next/image"
+import filterIcon from "@/public/icons/filter_icon.svg"
+import sortIcon from "@/public/icons/sort_icon.svg"
 
 export default function Home() {
 	return (
@@ -25,8 +27,21 @@ export default function Home() {
 				</div>
 			</div>
 
-			<div className="">
+			<div className="flex justify-between">
 				<Searchbar />
+				<div className="flex gap-4">
+					<button>
+						<Image
+							src={filterIcon}
+							alt="filter button"
+							width={25}
+							height={25}
+						/>
+					</button>
+					<button>
+						<Image src={sortIcon} alt="sort button" width={25} height={25} />
+					</button>
+				</div>
 			</div>
 		</div>
 	)
